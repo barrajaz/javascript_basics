@@ -10,3 +10,32 @@ function factorize(n)
     }
     return factors;
 }
+
+function findUnique(str)
+{
+    var uniqueStr = "";
+    for(var i=0; i<str.length;i++)
+    {
+        if(uniqueStr.indexOf(str.charAt(i)) == -1)
+        {
+            uniqueStr += str[i];
+        }
+    }
+
+    return uniqueStr;
+}
+
+function doOperation(x, y, operator)
+{
+    return operator(x,y);
+}
+
+function multiply(x,y)
+{
+    return x * y;
+}
+
+function power(x, y)
+{
+    return Math.pow(x,y);
+}
